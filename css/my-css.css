@@ -1,0 +1,888 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 2;
+  font-size: 15px;
+}
+section {
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+section h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Top Header */
+.top-header {
+  padding-left: 35px;
+  padding-right: 35px;
+  position: relative;
+  z-index: 1020;
+  display: flex;
+  justify-content: space-between;
+  color: white!important;
+  font-size: 13px;
+  letter-spacing: 1px;
+height: 40px;
+line-height: 40px;
+border-bottom: solid 1px rgba(255,255,255,.2);
+}
+
+.top-header ul {
+  padding-left: 0px;
+}
+.left-top-header, .right-top-header {
+display: flex;
+list-style: none;
+justify-content: space-between;
+
+}
+.left-top-header li, .right-top-header li {
+  margin-right: 30px;
+ 
+}
+.left-top-header a {
+  text-decoration: none;
+  color: white;
+}
+.social-icons {
+height: 16px;
+}
+.contact-icons {
+  height: 14px;
+  padding-bottom: 2px;
+  padding-right: 3px;
+}
+
+/* Sticky Nav Bar */
+@media only screen and (min-width: 1400px) {
+  .navbar-brand {
+    position: absolute;
+  }
+}
+.navbar {
+  width: 100%;
+}
+
+/* Moving Home Banner */
+.carousel-item {
+  transition-duration: 30s;
+  transition: linear 30s;
+}
+.carousel-container {
+  margin-top: -105px;
+  max-width: 100%;
+overflow-x: hidden;
+}
+.carousel {
+  width: 2000px;
+}
+.carousel-image-1, .carousel-image-2, .carousel-image-3, .carousel-image-4, .carousel-image-5 {
+
+  width: 100%;
+height: 100vh; /* You must set a specified height */
+
+background-position:center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.carousel-image-1 {
+  background-image: url(../images/csm_fassade_kassettensystem_kassetten_973667edb3.jpg);
+}
+.carousel-image-2 {
+  background-image: url(../images/csm_fassade_kassettensystem_kassetten_973667edb3.jpg);
+}
+
+.carousel-image-3 {
+  background-image: url(../images/csm_fassade_kassettensystem_kassetten_973667edb3.jpg);
+}
+
+
+/* Moving Welcome Text */
+#welcome-text-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+ align-items: center;
+}
+
+#welcome-text-wrapper h1 {
+  display: block;
+  width: 100%;
+text-align: center;
+font-size: 3rem;
+font-weight: 900!important;
+letter-spacing: 4px;
+color: white;
+}
+
+/* Mobile and Tablet Navbar */
+@media only screen and (max-width: 992px) {
+.top-header {
+  display: none;
+}
+.carousel {
+  margin-top: 48px;
+}
+.navbar {
+  background-color: rgb(26, 26, 26)!important;
+  
+}
+.navbar-nav li {
+  border-bottom: solid 1px #333;
+  
+  margin-right: 2rem;
+  margin-left: 2rem;
+
+}
+.navbar-nav {
+  height: 100%;
+}
+.navbar-nav a {
+  color: white!important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  line-height: 3;
+}
+
+.dropdown-toggle::after {
+  position: absolute;
+  right: 2px;
+  width: .8em;
+  height: .8em;
+  content: "";
+  border: .3em solid;
+  border-width: 0 .15em .15em 0;
+  transform: rotateZ(45deg);
+  margin-top: 10px;
+  
+}
+.dropdown-menu {
+  background-color: inherit;
+  border: none;
+}
+
+.dropdown-menu li {
+color: inherit;
+}
+.dropdown-item:hover {
+  background-color:inherit;
+
+}
+
+}
+
+/* Desktop NavBar */
+@media only screen and (min-width: 992px) {
+  .navbar, .top-header {
+    background-color:  rgb(0, 0, 0, 0.4)!important;
+
+  }
+  .navbar-sticky--active {
+    background-color: rgba(0, 0, 0, 1);
+   }
+  .navbar .navbar-brand {
+    font-weight: bolder;
+    font-size: 1.3em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar .navbar-nav {
+    margin: 0 auto;
+  }
+  .navbar .nav-item a{
+    color: white!important;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  line-height: 3;
+
+  }
+  .navbar .dropdown-menu {
+    background-color: rgb(0, 0, 0, 0.3);
+  }
+  .dropdown-item:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+  
+  }
+  
+  .navbar-expand-lg .navbar {
+    background-color: black;
+  }
+}
+
+.more-button {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 10px;
+  border: solid black 1px;
+ 
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 500;
+}
+.more-button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Metals Owl Carousel */
+
+.aurubis {
+  background-image: url(../images/q&m-dings-nordic-brown-light-what-do-you-think.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.falzonal {
+  background-image: url(../images/falzonal-gold-l.jpg);
+  background-size: cover;
+background-position: center;
+}
+.greencoat {
+  background-image: url(../images/aclass-west-malling-plx-anthracite-good.JPG);
+  background-size: cover;
+background-position: bottom;
+}
+.kalzip {
+  background-image: url(../images/kalzip-50333-alupluszinc-2.jpg);
+  background-size: cover;
+background-position: bottom;
+}
+.nedzink {
+  background-image: url(../images/e&a-stumperlowe-nedzink-noir-good.JPG);
+  background-size: cover;
+background-position: bottom;
+}
+.prefa {
+  background-image: url(../images/prefa_prefalz_2.jpg);
+  background-size: cover;
+background-position: center;
+}
+
+.roofinox {
+  background-image: url(../images/roofinox-tin-matte-house.jpg);
+  background-size: cover;
+background-position: center;
+}
+.traditional-textures {
+  background-image: url(../images/traditional-textures-avonside-clock-tower-inca\ gold-good.jpg);
+  background-size: cover;
+background-position: top;
+}
+.zintek {
+  background-image: url(../images/hl-bruntsfield-zintek-blue-goodish.jpg);
+  background-size: cover;
+background-position: top;
+}
+.zm-silesia {
+  background-image: url(../images/proclad-western-harbour-preaged-zinc-temp-image.JPG);
+  background-size: cover;
+background-position: center;
+}
+
+.metal-info {
+  display: block;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+color: white;
+font-size: 20px;
+font-weight: 1;
+padding-left: 10px;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.267);
+}
+
+.metal-info:hover {
+  opacity: 1;
+}
+.carousel-content {
+  height: 300px;
+  transition: transform 0.4s;
+  
+}
+.carousel-content:hover {
+  transform: scale(1.1, 1.1);
+  width: inherit;
+  
+}
+.metal-logo {
+  width: 70%!important;
+  margin-left: 15%;
+  margin-right: 15%;
+  position: absolute;              
+   top: 50%;                       
+   transform: translate(0, -50%);
+}
+
+.owl-carousel {
+  position:relative;
+}
+
+.owl-prev, .owl-next {
+    position:absolute;
+}
+ .owl-prev span {
+   font-size: 40px!important;
+ 
+ }
+ .owl-next span {
+  font-size: 40px!important;
+}
+.owl-nav button:hover {
+  background-color:rgba(0, 0, 0, 0)
+}
+
+.owl-prev {
+
+    left:10px;
+    top: 35%
+ }
+
+ .owl-next {
+    right: 10px;
+    top:35%;
+ }
+ 
+
+.hide-overflow {
+  overflow: hidden;
+  height: 100%;
+}
+ /* Systems gallery desktop */
+ @media only screen and (min-width: 992px) {
+  .systems-gallery {
+    display: grid;
+    grid-template-columns: 35% 35% 29%;
+    grid-template-rows: 50% 50%;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "reveal-panels standing-seam shingles"
+    " snaplock batten-roll shingles";
+  width: 100%;
+  margin-bottom: 40px;
+    height: 600px;
+  }
+
+.systems-img-1 {
+  background-image: url(../images/systems/varla-york-explore-xxx-reveal-panel-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.systems-img-2 {
+  background-image: url(../images/systems/varla-talbot-st-xxx-standing-seam.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-3 {
+  background-image: url(../images/systems/amr-manscombe-road-brass-shingles.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 100%;
+}
+
+.shingles {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+
+.systems-img-4 {
+  background-image: url(../images/systems/hispec-ral-7016-snaplock.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-5 {
+  background-image: url(../images/systems/batten-roll-homepage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+}
+/* Systems Gallery MObile / Tablet */
+@media only screen and (max-width: 992px) {
+  .systems-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    grid-template-areas: "reveal-panels standing-seam"
+    " shingles snaplock"
+    "batten-roll batten roll";
+  width: 100%;
+    height: 800px;
+    margin-bottom: 40px;
+  }
+
+.systems-img-1 {
+  background-image: url(../images/systems/varla-york-explore-xxx-reveal-panel-2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.systems-img-2 {
+  background-image: url(../images/systems/varla-talbot-st-xxx-standing-seam.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-3 {
+  background-image: url(../images/systems/amr-manscombe-road-brass-shingles.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 100%;
+}
+
+.batten-roll {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+
+.systems-img-4 {
+  background-image: url(../images/systems/hispec-ral-7016-snaplock.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+.systems-img-5 {
+  background-image: url(../images/systems/batten-roll-homepage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+}
+
+/* Systems Gallery Mobile*/
+@media only screen and (max-width: 600px) {
+  .systems-gallery {
+display: flex;
+flex-direction: column;
+height: unset;
+  }
+  .reveal-panels {
+height: 250px;
+  }
+  .standing-seam {
+   height: 300px;
+  }
+  .shingles {
+    height: 500px;
+  }
+  .snaplock {
+    height: 250px;
+  }
+  .batten-roll {
+    height: 250px;
+}
+}
+.opacity {
+  display: block;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+text-align: center;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.267);
+text-decoration: none;
+  color: white;
+}
+.opacity:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  font-size: 16px!important;
+  
+}
+
+.systems-info {
+  display: block;
+  padding-top: 25%;
+height: 100%;
+}
+.systems-img-1:hover, .systems-img-2:hover, .systems-img-3:hover, .systems-img-4:hover, .systems-img-5:hover{
+  transform: scale(1.1, 1.1);
+  transition: transform 0.4s;
+}
+
+/*More Section 1*/
+.more-section h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.flex-item {
+  box-sizing: border-box;
+ 
+  display: flex!important;
+  flex-direction: column;
+  justify-content: space-between!important;
+  margin-bottom: 70px;
+}
+
+.more-img {
+  background-image: url(../images/bespoke-agnetha-copper-worktop.jpg);
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+#products {
+  background-image:url(../images/iso-matt-light-breather-membrane-underlay.jpg);
+  background-size: cover;
+}
+#warranties {
+  background-image:url(../images/westmalling-greencoat-angleseam.jpg);
+  background-size: cover;
+}
+#self-build {
+  background-image: url(../images/self-build-homepage.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+#nbs {
+  background-image: url(../images/Logos/nbs-symbol.jpg);
+  background-size: cover;
+ 
+}
+
+.more-section {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+.more-section .more-button {
+  border-color: white;
+}
+
+.more-section .more-button:hover {
+  background-color: white;
+  color: black;
+}
+.more-header {
+  display: block;
+width: 100%;
+height: 100%;
+
+text-decoration: none;
+border-radius: 200px;
+}
+
+.more-img:hover {
+  transform: scale(1.04, 1.04);
+  transition: transform 0.4s;
+}
+
+.more-hide-overflow {
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+/*Rainwater Section*/
+#greencoat-rws-img {
+  background-image: url(../images/greencoat-rainwater-system.JPG);
+  background-size: cover;
+  height: 100%;
+}
+
+
+
+.rws-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+}
+#zinc-rws-img {
+background-image: url(../images/zinc-rainwater-system.JPG);
+background-size: cover;
+height: 100%;
+}
+#zinc-rws {
+  grid-row: 1/3;
+}
+#zinc-rws-text {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#ss-rws-img {
+  background-image: url(../images/stainess-steel-rainwater-system.jpg);
+  background-size: cover;
+  height: 100%;
+}
+#ss-rws {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+#ss-rws-text {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#copper-rws-img {
+  background-image: url(../images/copper-rainwater-system.JPG);
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+}
+#copper-rws {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+
+#greencoat-rws {
+  grid-column: 4/5;
+  grid-row: 2/4;
+}
+#zinc-rws-img:hover, #ss-rws-img:hover, #copper-rws-img:hover, #greencoat-rws-img:hover{
+cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: transform 0.4s;
+
+}
+.rws-text {
+  background-color: rgb(255, 255, 255);
+  border: solid 1px rgb(231, 231, 231);
+  font-size: 14px;
+  padding: 15px 15px 0 15px;
+}
+
+.rws-text h2{
+  font-size: 19px;
+  color: ;
+}
+.rws-text p {
+  color: ;
+  font-size: 13px;
+}
+.rws-text:hover {
+  background-color: rgb(201, 201, 201);
+}
+.rws-info {
+  color: #212529;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+}
+.rws-info:hover {
+  color:#212529;
+}
+.arrow-symbol-left {
+  height: 20px;
+  transform: rotate(270deg);
+}
+.arrow-symbol-right {
+  height: 20px;
+  transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .rws-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+  
+  }
+ 
+    #zinc-rws {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+    #zinc-rws-text {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    #ss-rws-text {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+    #ss-rws {
+      grid-column: 2/3;
+      grid-row: 2/4;
+    }
+
+    #copper-rws {
+      grid-column: 1/2;
+      grid-row: 4/6;
+    }
+    #copper-rws-text {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+  #greencoat-rws{
+    grid-row: 5/7;
+    grid-column: 2/3;
+  }
+    #greencoat-rws-text {
+      grid-column: 1/2;
+      grid-row: 6/7;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .rws-gallery {
+      display: flex;
+      flex-direction: column;
+  height: unset;
+    }
+    #zinc-rws-img, #ss-rws-img, #copper-rws-img, #greencoat-rws-img {
+     height: 400px;
+    }
+    .arrow-symbol-left, .arrow-symbol-right {
+      display: none;
+    }
+  }
+
+/*More Section 2*/
+
+
+  
+  #tools-machinery {
+    background-image:url(../images/dimos-machinery-category-header-2.jpg);
+    background-size: cover;
+    background-position: center right;
+  }
+  #training {
+    background-image: url(../images/training-homepage.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  #one-stop-shop {
+    background-image: url(../images/bespoke-agnetha-copper-worktop.jpg);
+    background-size: cover;
+  }
+
+  
+/*Contact Form */
+#contact-form .form-label {
+  display: none;
+}
+#contact-form input, #message-input {
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 2;
+
+}
+.submit {
+ padding: 7px;
+}
+
+
+
+/* Map */
+.map-link .st0 {
+  transition: 0.5s;
+  z-index:9999;
+}
+
+.map-link:hover .st0 {
+  fill: #000E2F;
+  transition: 0.5s;
+  z-index:9999;
+}
+.map-link:hover .st1 {
+  fill: #000E2F;
+  transition: 0.5s;
+}
+.map-link:hover .st2 {
+  fill: #000E2F;
+  transition: 0.5s;
+}
+.map-link:hover .st3 {
+  fill: #000E2F;
+  transition: 0.5s;
+}
+
+/* Text Labels */
+
+.labels {
+    fill: #fff;
+    font-family: Arial;
+    font-size: 6px;
+    line-height: 12px;
+    font-weight: normal;
+    z-index: 1;
+    display: block;
+}
+.map-link {
+  text-decoration: none;
+}
+
+.map {
+ height: 1000px;
+  width: 100%;
+}
+.map-2 {
+
+}
+#locations svg {
+height:550px;
+}
+
+
+#locations svg path {
+  cursor: pointer;
+}
+/* Wales */
+#GB-UKL {
+  fill: green;
+}
+
+/* North-West */
+#GB-UKD {
+  fill: green;
+
+}
+#GB-UKD:hover {
+  fill: red;
+ cursor: pointer;
+
+}
