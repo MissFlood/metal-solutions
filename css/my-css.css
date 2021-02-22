@@ -1,18 +1,77 @@
 body {
   font-family: 'Raleway', sans-serif;
-  line-height: 2;
-  font-size: 15px;
+  line-height: 2.1;
+  font-size: 14px;
 }
+
+/* #region Seperator */
+.separator {
+  line-height: 0.5;
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+
+.separator span {
+  display: inline-block;
+  position: relative;
+}
+
+.separator span:before, .separator span:after {
+  border-bottom: 1px solid rgba(0,0,0,.2);}
+
+  .separator span:before {
+    right: 100%;
+  
+  }
+  .separator span:before, .separator span:after {
+    content: "";
+    position: absolute;
+    background-color:  rgb(230, 230, 230)!important;
+    height: 1px;
+    top: 4px;
+    width: 300px;}
+
+.separator span i {
+  color:rgb(197, 197, 197)!important;
+  font-size: 11px!important;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  float: none;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+ text-align: center;
+      font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* #endregion */
 section {
-  padding-top: 90px;
-  padding-bottom: 50px;
+padding-top: 80px;
+ padding-bottom: 90px;
 }
+
 section h1 {
   text-transform: uppercase;
   text-align: center;
+letter-spacing: 3px;
+font-size: 35px;
 }
 
-/* Top Header */
+#metals {
+  background-color: rgb(236, 236, 236);
+}
+#metals-gallery {
+  display: flex;
+  width: 100%!important;
+}
+.gallery-img {
+  width: 700px;
+  height: 400px;
+}
+
+/* #region Top Header */
 .top-header {
   padding-left: 35px;
   padding-right: 35px;
@@ -53,7 +112,7 @@ height: 16px;
   padding-bottom: 2px;
   padding-right: 3px;
 }
-
+/* #endregion */
 /* Sticky Nav Bar */
 @media only screen and (min-width: 1400px) {
   .navbar-brand {
@@ -64,7 +123,7 @@ height: 16px;
   width: 100%;
 }
 
-/* Moving Home Banner */
+/* #region Moving Home Image */
 .carousel-item {
   transition-duration: 30s;
   transition: linear 30s;
@@ -97,7 +156,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
 .carousel-image-3 {
   background-image: url(../images/csm_fassade_kassettensystem_kassetten_973667edb3.jpg);
 }
-
+/* #endregion */
 
 /* Moving Welcome Text */
 #welcome-text-wrapper {
@@ -312,7 +371,7 @@ background: rgba(0, 0, 0, 0.267);
   opacity: 1;
 }
 .carousel-content {
-  height: 300px;
+  height: 310px;
   transition: transform 0.4s;
   
 }
@@ -364,6 +423,10 @@ background: rgba(0, 0, 0, 0.267);
   overflow: hidden;
   height: 100%;
 }
+
+ /* Metals */
+
+
  /* Systems gallery desktop */
  @media only screen and (min-width: 992px) {
   .systems-gallery {
@@ -376,7 +439,7 @@ background: rgba(0, 0, 0, 0.267);
     " snaplock batten-roll shingles";
   width: 100%;
   margin-bottom: 40px;
-    height: 600px;
+    height: 650px;
   }
 
 .systems-img-1 {
@@ -436,7 +499,7 @@ background: rgba(0, 0, 0, 0.267);
     " shingles snaplock"
     "batten-roll batten roll";
   width: 100%;
-    height: 800px;
+    height: 1000px;
     margin-bottom: 40px;
   }
 
@@ -542,30 +605,32 @@ height: 100%;
   transition: transform 0.4s;
 }
 
+
+
 /*More Section 1*/
 .more-section h1 {
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 2px;
 }
 
 .flex-item {
   box-sizing: border-box;
- 
   display: flex!important;
   flex-direction: column;
   justify-content: space-between!important;
-  margin-bottom: 70px;
+
 }
 
 .more-img {
   background-image: url(../images/bespoke-agnetha-copper-worktop.jpg);
   background-size: cover;
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 220px;
   border-radius: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+
 }
 #products {
   background-image:url(../images/iso-matt-light-breather-membrane-underlay.jpg);
@@ -587,15 +652,19 @@ height: 100%;
 }
 
 .more-section {
-  background-image: url(../images/background.png);
+  background-image: url(../images/background-2.png);
+  background-attachment: fixed;
   background-size: cover;
   background-position: bottom;
-  color: white;
-  text-align: center;
   font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 60px;
 }
 .more-section .more-button {
   border-color: white;
+  margin-bottom: 50px;
 }
 
 .more-section .more-button:hover {
@@ -624,63 +693,48 @@ border-radius: 200px;
 }
 
 /*Rainwater Section*/
+
+#rws-gallery {
+display: flex;
+flex-wrap: wrap;
+}
+
+#rws-gallery .hide-overflow {
+height: unset;
+}
+.rws-img {
+}
+.img-height {
+ height: 500px;
+}
 #greencoat-rws-img {
   background-image: url(../images/greencoat-rainwater-system.JPG);
   background-size: cover;
-  height: 100%;
+
 }
 
 
-
-.rws-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 5px 5px;
-}
 #zinc-rws-img {
 background-image: url(../images/zinc-rainwater-system.JPG);
 background-size: cover;
-height: 100%;
+
 }
-#zinc-rws {
-  grid-row: 1/3;
-}
-#zinc-rws-text {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
+
+
 #ss-rws-img {
   background-image: url(../images/stainess-steel-rainwater-system.jpg);
   background-size: cover;
-  height: 100%;
-}
-#ss-rws {
-  grid-column: 2/3;
-  grid-row: 2/4;
-}
-#ss-rws-text {
-  grid-column: 1/2;
-  grid-row: 3/4;
+
 }
 
 #copper-rws-img {
   background-image: url(../images/copper-rainwater-system.JPG);
   background-size: cover;
   background-position: bottom;
-  height: 100%;
-}
-#copper-rws {
-  grid-column: 3/4;
-  grid-row: 1/3;
+ 
 }
 
-
-#greencoat-rws {
-  grid-column: 4/5;
-  grid-row: 2/4;
-}
-#zinc-rws-img:hover, #ss-rws-img:hover, #copper-rws-img:hover, #greencoat-rws-img:hover{
+.rws-img:hover{
 cursor: pointer;
     transform: scale(1.1, 1.1);
     transition: transform 0.4s;
@@ -688,98 +742,28 @@ cursor: pointer;
 }
 .rws-text {
   background-color: rgb(255, 255, 255);
-  border: solid 1px rgb(231, 231, 231);
+display: block;
   font-size: 14px;
   padding: 15px 15px 0 15px;
+  color: #212529;
 }
-
+.rws-link {
+  text-decoration: none;
+display: block;
+width: 50%;
+}
 .rws-text h2{
   font-size: 19px;
-  color: ;
 }
 .rws-text p {
-  color: ;
   font-size: 13px;
 }
-.rws-text:hover {
-  background-color: rgb(201, 201, 201);
-}
-.rws-info {
-  color: #212529;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
 
-}
-.rws-info:hover {
-  color:#212529;
-}
-.arrow-symbol-left {
-  height: 20px;
-  transform: rotate(270deg);
-}
-.arrow-symbol-right {
-  height: 20px;
-  transform: rotate(90deg);
-}
 
-@media only screen and (max-width: 1200px) {
-  .rws-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px 5px;
-  
-  }
- 
-    #zinc-rws {
-      grid-column: 1/2;
-      grid-row: 1/3;
-    }
-    #zinc-rws-text {
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
-    #ss-rws-text {
-      grid-column: 1/2;
-      grid-row: 3/4;
-    }
-    #ss-rws {
-      grid-column: 2/3;
-      grid-row: 2/4;
-    }
 
-    #copper-rws {
-      grid-column: 1/2;
-      grid-row: 4/6;
-    }
-    #copper-rws-text {
-      grid-column: 2/3;
-      grid-row: 4/5;
-    }
-  #greencoat-rws{
-    grid-row: 5/7;
-    grid-column: 2/3;
-  }
-    #greencoat-rws-text {
-      grid-column: 1/2;
-      grid-row: 6/7;
-    }
-  }
 
-  @media only screen and (max-width: 768px) {
-    .rws-gallery {
-      display: flex;
-      flex-direction: column;
-  height: unset;
-    }
-    #zinc-rws-img, #ss-rws-img, #copper-rws-img, #greencoat-rws-img {
-     height: 400px;
-    }
-    .arrow-symbol-left, .arrow-symbol-right {
-      display: none;
-    }
-  }
+
+
 
 /*More Section 2*/
 
