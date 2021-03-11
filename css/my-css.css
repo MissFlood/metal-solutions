@@ -1,75 +1,261 @@
-body {
+/* #region General */
+header, h1 {
   font-family: 'Raleway', sans-serif;
   line-height: 2.1;
   font-size: 14px;
 }
 
-/* #region Seperator */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 2.3;
+  color: #595959;
+ overflow-x:hidden;
+}
+
+#who-we-are {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#metals {
+  padding-top: 70px;
+}
+.systems {
+  padding-top: 70px;
+}
+.band {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#metals .more-button, .systems .more-button {
+width: 300px;
+}
+.band .more-button {
+  margin-top:0px!important;
+}
+#rws-section {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+#contact-form {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.more-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .separator {
-  line-height: 0.5;
-    text-align: center;
-    margin: 20px 0 30px 0;
+  padding: 2px 0 15px 0;
+}
+.separator-2 {
+  padding: 2px 0 30px 0;
 }
 
-.separator span {
-  display: inline-block;
-  position: relative;
+hr {
+  width: 100%;
 }
 
-.separator span:before, .separator span:after {
-  border-bottom: 1px solid rgba(0,0,0,.2);}
-
-  .separator span:before {
-    right: 100%;
-  
-  }
-  .separator span:before, .separator span:after {
-    content: "";
-    position: absolute;
-    background-color:  rgb(230, 230, 230)!important;
-    height: 1px;
-    top: 4px;
-    width: 300px;}
-
-.separator span i {
-  color:rgb(197, 197, 197)!important;
-  font-size: 11px!important;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  float: none;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
- text-align: center;
-      font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* #endregion */
-section {
-padding-top: 80px;
- padding-bottom: 90px;
+.flex {
+  display: flex;
 }
 
 section h1 {
   text-transform: uppercase;
-  text-align: center;
 letter-spacing: 3px;
 font-size: 35px;
+line-height: 1;
+text-align: center;
 }
 
-#metals {
-  background-color: rgb(236, 236, 236);
+section h2 {
+margin-bottom: 20px;
 }
-#metals-gallery {
-  display: flex;
-  width: 100%!important;
+
+.more-button {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin-top: 30px;
+  border: solid black 1px;
+ margin-left: auto;
+ margin-right: auto;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 500;
 }
-.gallery-img {
-  width: 700px;
-  height: 400px;
+.more-button:hover {
+  color: white;
+  background-color: black;
 }
+
+.hide-overflow {
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+
+.opacity {
+  display: block;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+text-align: center;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.267);
+text-decoration: none;
+  color: white;
+}
+.opacity:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+  font-size: 16px!important;
+}
+/* #endregion */
+
+/* #region Grey Background */
+.grey-theme {
+  background-color: rgb(95, 95, 95);
+  color:rgb(219, 219, 219);
+  
+}
+.grey-theme h1 {
+  color: rgb(255, 255, 255)!important;
+}
+.grey-theme .more-button {
+  border-color: white;
+  color: white;
+
+}
+.grey-theme .more-button:hover{
+  color:#333;
+  background-color: white;
+}
+
+.grey-theme h1, .grey-theme h3 {
+  color: ;
+}
+.grey-theme .flex img {
+  height: 40px;
+  margin-right: 10px;
+}
+.grey-theme .more-button:hover{
+ 
+}
+/* #endregion */
+
+/* #region Picture Scroll Background */
+.scroll-background {
+  background-image: url(../images/background-2.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #b8b8b8;
+}
+
+#contact-form input, #message-input {
+  border-color:#b8b8b8;
+color: #b8b8b8;
+  background-color: transparent;
+}
+::placeholder{
+  color: #b8b8b8!important;
+}
+
+.scroll-background .more-button {
+  border-color: white;
+  color: white;
+}
+.scroll-background h1, .scroll-background h3, .scroll-background h2, .scroll-background h4 {
+  color: white;
+}
+
+.scroll-background .more-button:hover{
+ color:#333;
+ background-color: white;
+}
+.scroll-background .flex img {
+  height: 40px;
+  margin-right: 10px;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+
+/* #endregion */
+
+/* #region Dark Grey Background */
+.dark-grey-theme {
+ background-color: rgb(29, 29, 29);
+ color: #b8b8b8;
+}
+
+.dark-grey-theme a{
+
+  color: #b8b8b8;
+  text-decoration: none;
+ }
+
+.dark-grey-theme a:hover {
+  color: white;
+}
+.dark-grey-theme .more-button {
+  border-color: white;
+  color: white;
+}
+.dark-grey-theme h1, .dark-grey-theme h3, .dark-grey-theme h2, .dark-grey-theme h4 {
+  color: white;
+}
+
+.dark-grey-theme .more-button:hover{
+ color:#333;
+ background-color: white;
+}
+.dark-grey-theme .flex img {
+  height: 40px;
+  margin-right: 10px;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+
+/* #endregion */
+
+/* #region White Background */
+.white-theme{
+  color: #595959;
+  background-color: rgb(255, 255, 255);
+ }
+
+ .white-theme h1, .white-theme h3 {
+   color: ;
+ }
+ 
+ 
+.white-theme a {
+  color: #595959;
+}
+ 
+ /* #endregion */
+
+/* #region About Section */
+.about-text {
+margin-left: auto;
+margin-right: auto;
+
+}
+/* #endregion */
 
 /* #region Top Header */
 .top-header {
@@ -113,7 +299,8 @@ height: 16px;
   padding-right: 3px;
 }
 /* #endregion */
-/* Sticky Nav Bar */
+
+/* #region Sticky Nav Bar DESKTOP */
 @media only screen and (min-width: 1400px) {
   .navbar-brand {
     position: absolute;
@@ -122,6 +309,7 @@ height: 16px;
 .navbar {
   width: 100%;
 }
+/* #endregion */
 
 /* #region Moving Home Image */
 .carousel-item {
@@ -158,27 +346,57 @@ background-size: cover; /* Resize the background image to cover the entire conta
 }
 /* #endregion */
 
-/* Moving Welcome Text */
+/* #region Moving Welcome Text */
 #welcome-text-wrapper {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100vh;
   display: flex;
- align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
-#welcome-text-wrapper h1 {
-  display: block;
+.word-carousel {
+  height: 100px;
+}
+.word-carousel .item {
+  width : 100%;
+  height: 90px;
+}
+#welcome-text-wrapper .item h1 {
+ text-align: center;
+  font-size: 4rem;
+  font-weight: 400!important;
+  letter-spacing: 4px;
+  color: white;
+  text-transform: uppercase!important;
+  padding-top:0px!important;
+  margin-top: 0px!important;
+  }
+  #welcome-text-wrapper .more-button {
+    border-color: white;
+    color: white;
+  }
+  #welcome-text-wrapper .more-button:hover {
+    background-color: white;
+    color: black;
+  }
+.top-welcome-text {
   width: 100%;
-text-align: center;
-font-size: 3rem;
-font-weight: 900!important;
-letter-spacing: 4px;
-color: white;
+  text-align: center;
+  color: white;
+  
+}
+.top-welcome-text p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
-/* Mobile and Tablet Navbar */
+/* #endregion */
+
+/* #region Navbar MOBILE & TABLET */
 @media only screen and (max-width: 992px) {
 .top-header {
   display: none;
@@ -234,8 +452,9 @@ color: inherit;
 }
 
 }
+/* #endregion */
 
-/* Desktop NavBar */
+/* #region Navbar DESKTOP */
 @media only screen and (min-width: 992px) {
   .navbar, .top-header {
     background-color:  rgb(0, 0, 0, 0.4)!important;
@@ -273,31 +492,65 @@ color: inherit;
     background-color: black;
   }
 }
+/* #endregion */
 
-.more-button {
-  display: block;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  margin-top: 10px;
-  border: solid black 1px;
- 
-  color: inherit;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 11px;
-  font-weight: 500;
+/* #region Stats Section */
+#stats-section {
+  background-image: url(../images/background-2.png);
+  background-size: cover;
+  background-attachment: fixed;
 }
-.more-button:hover {
+#stats {
+  padding-top:70px;
+  padding-bottom: 70px;
+  width: 100%;
   color: white;
-  background-color: black;
+  justify-content:space-between!important;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  
+  
+}
+.stat span {
+  text-transform: uppercase;
+}
+.stats-icon {
+height: 70px;
+width: 70px;
+  margin-bottom: 10px;
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+.bold-number {
+  font-size: 60px;
+  line-height: 1;
+  
+}
+/* #endregion */
+
+/* #region Metals Section */
+#metals h3 {
+
+  line-height: 20px;
+    font-size: 16px;
+font-weight: bold;
+    white-space: nowrap;
+}
+#metals .flex img {
+  height: 35px;
+  margin-right: 6px;
+  position: relative; 
+  bottom: 5px;
 }
 
-/* Metals Owl Carousel */
 
+/* #endregion */
+
+/* #region Metals Gallery */
 .aurubis {
   background-image: url(../images/q&m-dings-nordic-brown-light-what-do-you-think.jpg);
   background-size: cover;
@@ -330,7 +583,7 @@ background-position: center;
 }
 
 .roofinox {
-  background-image: url(../images/roofinox-tin-matte-house.jpg);
+  background-image: url(../images/roofinox.jpg);
   background-size: cover;
 background-position: center;
 }
@@ -371,15 +624,19 @@ background: rgba(0, 0, 0, 0.267);
   opacity: 1;
 }
 .carousel-content {
-  height: 310px;
+  height: 350px;
   transition: transform 0.4s;
-  
 }
+
+.owl-theme .owl-nav {
+  margin-top: 0px!important;
+}
+
 .carousel-content:hover {
   transform: scale(1.1, 1.1);
   width: inherit;
-  
 }
+
 .metal-logo {
   width: 70%!important;
   margin-left: 15%;
@@ -394,52 +651,65 @@ background: rgba(0, 0, 0, 0.267);
 }
 
 .owl-prev, .owl-next {
-    position:absolute;
+  position:absolute;
 }
- .owl-prev span {
-   font-size: 40px!important;
- 
- }
- .owl-next span {
-  font-size: 40px!important;
+
+.owl-next span {
+  height: 70px!important;
+  border: none;
 }
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  background-color: white!important;
+  border: none;
+  padding: 0!important;
+  font-size: 50px!important;
+  line-height: 70px!important;
+  width: 70px;
+ top: 310px;
+
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+  background-color:rgb(63, 63, 63)!important;
+}
+
 .owl-nav button:hover {
-  background-color:rgba(0, 0, 0, 0)
+  background-color:rgb(0, 0, 1)
 }
 
 .owl-prev {
-
-    left:10px;
-    top: 35%
- }
-
- .owl-next {
-    right: 10px;
-    top:35%;
- }
- 
-
-.hide-overflow {
-  overflow: hidden;
-  height: 100%;
+  left:10px;
 }
 
- /* Metals */
+.owl-next {
+  right: 10px;
+}
 
+#metals-gallery {
+  margin-top: 50px;
+  display: flex;
+  width: 100%!important;
+}
+.gallery-img {
+  width: 700px;
+  height: 400px;
+}
+/* #endregion */
 
- /* Systems gallery desktop */
+/* #region Systems Gallery DESKTOP */
  @media only screen and (min-width: 992px) {
   .systems-gallery {
     display: grid;
-    grid-template-columns: 35% 35% 29%;
+    grid-template-columns: 35% 35% 30%;
     grid-template-rows: 50% 50%;
-    column-gap: 5px;
-    row-gap: 5px;
+  gap:5px;
     grid-template-areas: "reveal-panels standing-seam shingles"
     " snaplock batten-roll shingles";
   width: 100%;
-  margin-bottom: 40px;
-    height: 650px;
+    height: 700px;
+    margin-top: 50px;
+    padding-bottom: 10px;
   }
 
 .systems-img-1 {
@@ -487,7 +757,9 @@ background: rgba(0, 0, 0, 0.267);
 }
 
 }
-/* Systems Gallery MObile / Tablet */
+/* #endregion */
+
+/* #region Systems Gallery TABLET */
 @media only screen and (max-width: 992px) {
   .systems-gallery {
     display: grid;
@@ -500,7 +772,8 @@ background: rgba(0, 0, 0, 0.267);
     "batten-roll batten roll";
   width: 100%;
     height: 1000px;
-    margin-bottom: 40px;
+    padding-bottom: 10px;
+    margin-top: 50px;
   }
 
 .systems-img-1 {
@@ -548,8 +821,9 @@ background: rgba(0, 0, 0, 0.267);
 }
 
 }
+/* #endregion */
 
-/* Systems Gallery Mobile*/
+/* #region Systems Gallery MOBILE*/
 @media only screen and (max-width: 600px) {
   .systems-gallery {
 display: flex;
@@ -557,44 +831,24 @@ flex-direction: column;
 height: unset;
   }
   .reveal-panels {
-height: 250px;
+height: 300px;
   }
   .standing-seam {
-   height: 300px;
+   height: 500px;
   }
   .shingles {
-    height: 500px;
+    height: 630px;
   }
   .snaplock {
-    height: 250px;
+    height: 340px;
   }
   .batten-roll {
-    height: 250px;
+    height: 400px;
 }
 }
-.opacity {
-  display: block;
-  opacity: 0;
-  transition: opacity .2s ease-in-out;
-  transition-property: opacity;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-text-align: center;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.267);
-text-decoration: none;
-  color: white;
-}
-.opacity:hover {
-  opacity: 1;
-  text-decoration: none;
-  color: white;
-  font-size: 16px!important;
-  
-}
+/* #endregion */
 
+/* #region Systems Section */
 .systems-info {
   display: block;
   padding-top: 25%;
@@ -604,81 +858,53 @@ height: 100%;
   transform: scale(1.1, 1.1);
   transition: transform 0.4s;
 }
+/* #endregion */
 
-
-
-/*More Section 1*/
+/* #region More Sections */
 .more-section h1 {
   font-size: 22px;
   letter-spacing: 2px;
+  display: block;
+  white-space: nowrap;
+ 
+  font-weight:bold;
 }
+.more-section p {
+  display: block;
 
-.flex-item {
-  box-sizing: border-box;
-  display: flex!important;
-  flex-direction: column;
-  justify-content: space-between!important;
-
-}
-
-.more-img {
-  background-image: url(../images/bespoke-agnetha-copper-worktop.jpg);
-  background-size: cover;
-  height: 220px;
-  width: 220px;
-  border-radius: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-
-}
-#products {
-  background-image:url(../images/iso-matt-light-breather-membrane-underlay.jpg);
-  background-size: cover;
-}
-#warranties {
-  background-image:url(../images/westmalling-greencoat-angleseam.jpg);
-  background-size: cover;
-}
-#self-build {
-  background-image: url(../images/self-build-homepage.jpg);
-  background-size: cover;
-  background-position: bottom;
-}
-#nbs {
-  background-image: url(../images/Logos/nbs-symbol.jpg);
-  background-size: cover;
  
 }
+.more-section a {
+  display: block;
+}
 
+
+
+.more-img {
+  width:250px;
+  height: 250px;
+ 
+
+}
 .more-section {
-  background-image: url(../images/background-2.png);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: bottom;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
+  font-size: 13px;
   text-align: center;
-  padding-top: 110px;
-  padding-bottom: 60px;
 }
 .more-section .more-button {
-  border-color: white;
-  margin-bottom: 50px;
+ left: 75px;
+ right: 75px;
+ margin-left: auto;
+ margin-right: auto;
+  margin-top: 0px!important;
 }
 
-.more-section .more-button:hover {
-  background-color: white;
-  color: black;
-}
-.more-header {
-  display: block;
-width: 100%;
-height: 100%;
 
-text-decoration: none;
-border-radius: 200px;
+
+.border-line {
+  border-right:solid 1px #d3d3d3;
 }
+
+
 
 .more-img:hover {
   transform: scale(1.04, 1.04);
@@ -688,24 +914,41 @@ border-radius: 200px;
 .more-hide-overflow {
   width: 250px;
   height: 250px;
-  border-radius: 200px;
+  margin-left: auto!important;
+  margin-right: auto!important;
   overflow: hidden;
+  
 }
-
-/*Rainwater Section*/
-
-#rws-gallery {
-display: flex;
-flex-wrap: wrap;
+.more-text {
+  padding: 20px 0px 0 0px;
+width: 250px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
+.more-section .row>* {
+  padding-right: 0px!important;
+  padding-left:0px!important;
+}
+/* #endregion */
+
+/* #region Rainwater Section */
+
 
 #rws-gallery .hide-overflow {
 height: unset;
+margin-bottom: 0px;
 }
-.rws-img {
+
+.rws-link {
+  text-decoration: none;
+display: block;
+margin-bottom: 5px;
 }
+
+
 .img-height {
- height: 500px;
+ height: 350px;
 }
 #greencoat-rws-img {
   background-image: url(../images/greencoat-rainwater-system.JPG);
@@ -741,67 +984,111 @@ cursor: pointer;
 
 }
 .rws-text {
-  background-color: rgb(255, 255, 255);
+ 
 display: block;
-  font-size: 14px;
-  padding: 15px 15px 0 15px;
-  color: #212529;
+
+  padding: 15px 0 15px 0;
+
 }
-.rws-link {
-  text-decoration: none;
-display: block;
-width: 50%;
-}
+
 .rws-text h2{
   font-size: 19px;
+  margin-bottom: 5px;
 }
 .rws-text p {
   font-size: 13px;
 }
-
-
-
-
-
-
-
-/*More Section 2*/
-
-
+/* #endregion */
   
-  #tools-machinery {
-    background-image:url(../images/dimos-machinery-category-header-2.jpg);
-    background-size: cover;
-    background-position: center right;
-  }
-  #training {
-    background-image: url(../images/training-homepage.jpg);
-    background-size: cover;
-    background-position: bottom;
-  }
-  #one-stop-shop {
-    background-image: url(../images/bespoke-agnetha-copper-worktop.jpg);
-    background-size: cover;
-  }
-
-  
-/*Contact Form */
+/* #region Contact Form */
 #contact-form .form-label {
   display: none;
 }
 #contact-form input, #message-input {
   border-radius: 0px;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 12px;
+  line-height: 3;
 
 }
 .submit {
  padding: 7px;
+ background: transparent;
+}
+.mb-3 {
+  margin-bottom: 10px!important;
+}
+/* #endregion */
+
+/* #region Socials Section */
+#instagram-feed{ 
+  background-color:#b6b6b6;
+}
+.band {
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#ig-header {
+  height: 90px;
+  background-color: white;
+}
+#our-socials {
+  text-align: center;
+}
+#our-socials h1 {
+  display: inline-block;
+  line-height: 150px;
+  margin-right: 70px;
+  color: black;
+
+}
+#our-socials a {
+  text-decoration: none!important;
+}
+.socials-icons {
+  height: 60px;
+ position: relative;
+ bottom: 10px;
+margin-right: 50px;
+
+}
+.socials-icons:hover {
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+}
+  
+.ig-text {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+text-align: center;
+color: black;
+}
+
+#instagram-feed .band .more-button {
+  
+  width: 500px;
+}
+#instagram-feed .more-button {
+  border-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+#instagram-feed .more-button:hover {
+ color: white;
+
+}
+.vertical-align {
+  line-height: 90px;
 }
 
 
+/* #endregion */
 
-/* Map */
+/* #region Map */
+
 .map-link .st0 {
   transition: 0.5s;
   z-index:9999;
@@ -870,3 +1157,28 @@ height:550px;
  cursor: pointer;
 
 }
+/* #endregion */
+
+/* #region Map */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#footer-logo {
+  height: 100px;
+  margin-top: 50px;
+}
+footer h4 {
+  margin-top: 30px;
+}
+footer ul {
+margin-top:0px!important;
+margin-bottom:0px;
+padding-left:0px;
+list-style: none;
+}
+footer li {
+  margin-top: 0px;
+ padding-top: 0px;
+}
+/* #endregion */
