@@ -128,32 +128,7 @@ text-decoration: none;
 
 /* #region Grey Background */
 .grey-theme {
-  background-color: rgb(95, 95, 95);
-  color:rgb(219, 219, 219);
-  
-}
-.grey-theme h1 {
-  color: rgb(255, 255, 255)!important;
-}
-.grey-theme .more-button {
-  border-color: white;
-  color: white;
-
-}
-.grey-theme .more-button:hover{
-  color:#333;
-  background-color: white;
-}
-
-.grey-theme h1, .grey-theme h3 {
-  color: ;
-}
-.grey-theme .flex img {
-  height: 40px;
-  margin-right: 10px;
-}
-.grey-theme .more-button:hover{
- 
+  background-color: rgb(230, 230, 230);
 }
 /* #endregion */
 
