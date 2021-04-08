@@ -168,9 +168,10 @@ color: #b8b8b8;
   filter: grayscale(1) invert(1);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .scroll-background {
     background-position: bottom;
+    background-attachment: scroll;
   }
   }
 /* #endregion */
@@ -555,12 +556,7 @@ color: inherit;
 /* #endregion */
 
 /* #region Stats Section */
-#stats-section {
-  background-image: url(../images/background-2.png);
-  background-size: cover;
-  background-attachment: fixed;
 
-}
 #stats {
   padding-top:90px;
   padding-bottom: 90px;
