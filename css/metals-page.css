@@ -1,0 +1,334 @@
+
+.section-img-left {
+    width: 50vw;
+   position: relative;
+   left: 30%; 
+   margin-left: -30vw;
+   height: 100%;
+}
+
+.section-img-right {
+    width: 65vw;
+   position: relative;
+   height: 100%;
+}
+
+@media only screen and (max-width: 1600px) {
+    .section-img-left {
+        width: 50vw;
+       position: relative;
+       left: 22%; 
+       margin-left: -22vw;
+       height: 100%;
+    }
+}
+
+.page-section .row {
+    --bs-gutter-x: 0;
+}
+
+
+
+.page-section:before {
+   
+    background-color:red!important;
+    
+    
+}
+
+.manufacturer-list {
+    margin-right: -20px;
+}
+.manufacturer-list div {
+    padding-right: 20px; 
+}
+
+.more-arrow {
+   
+    width: 19px;
+    height: 19px;
+  text-align: center;
+    display: inline-block;
+
+    border-radius: 20px;
+}
+.manufacturer-h3 {
+    margin-bottom: 0px;
+}
+
+.manufacturer-link-x3 {
+    width: 100%;
+    padding-bottom: 85%;
+  margin: auto;
+    position: relative;
+    overflow: hidden;
+ display: block;
+ text-decoration: none;
+ overflow:hidden;
+ box-shadow: 2px 2px 5px rgb(83, 83, 83);
+
+}
+.manufacturer-link {
+    width: 100%;
+    padding-bottom: 60%;
+  margin: auto;
+    position: relative;
+    overflow: hidden;
+ display: block;
+ text-decoration: none;
+ overflow:hidden;
+ box-shadow: 2px 2px 5px rgb(83, 83, 83);
+
+}
+.manufacturer-img {
+    position: absolute;
+    height: 100%;
+
+}
+.manufacturer-link:hover .more-arrow {
+   background-color: white;
+   color: black;
+}
+.manufacturer-link-x3:hover .more-arrow {
+    background-color: white;
+    color: black;
+ }
+.manufacturer-link:hover .underline {
+    text-decoration: underline;
+ }
+ .manufacturer-link-x3:hover .underline {
+    text-decoration: underline;
+ }
+
+
+
+#falzonal-link {
+    background-image: url(../images/falzonal-aluminium.jpg);
+    background-size: cover;
+}
+#prefa-link {
+    background-image: url(../images/prefa_prefalz_2.jpg);
+    background-size: cover;
+}
+
+#falzinc-link {
+    background-image: url(../images/falzonal-aluminium-2.jpg);
+    background-size: cover;
+}
+#aurubis-link {
+    background-image: url(../images/sheffield-market-brass-shingles.jpeg);
+    background-size: cover;
+}
+#aurubis-link-bronze {
+    background-image: url(../images/waitrose-bronze-reveal-panel-l.jpeg);
+    background-size: cover;
+}
+#aurubis-link-copper {
+    background-image: url(../images/hispec-edgehill-library-nordic-brown-light-copper-cropped-2.jpg);
+    background-size: cover;
+}
+#greencoat-link {
+    background-image: url(../images/rac-birchwood-plx-xxx-2-good.jpg);
+    background-size: cover;
+}
+#roofinox-link {
+    background-image: url(../images/roofinox-tin-matte-house.jpg);
+    background-size: cover;
+}
+#nedzink-link {
+    background-image: url(../images/hispec-ngas-nedzink-noir-good.jpg);
+    background-size: cover;
+}
+#zintek-link {
+    background-image: url(../images/zintek.jpg);
+    background-size: cover;
+}
+#zm-silesia-link {
+    background-image: url(../images/zm-silesia-cladding.jpeg);
+    background-size: cover;
+}
+
+
+#aluminium-img{
+    background-image:url(../images/metalline-apex-barton-school-dover-falzinc-medium.jpg);
+    background-size:cover;
+    background-position: ;
+width: 100%;
+   height: 100%;
+}
+#brass-img {
+    background-image:url(../images/varla-c4d2-nordic-brass-good.JPG);
+    background-size: cover;
+    background-position: center right;
+    width: 100%;
+   height: 100%;
+  
+}
+#bronze-img {
+    background-image:url(../images/waitrose-bronze-reveal-panel-l.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+#copper-img {
+    background-image:url(../images/hispec-edgehill-library-nordic-brown-light-copper-cropped-2.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+   height: 100%;
+}
+#steel-img {
+    background-image:url(../images/aclass-west-malling-plx-anthracite-good.JPG);
+    background-size: cover;
+    width: 100%;
+   height: 100%;
+}
+
+#stainless-steel-img {
+    background-image:url(../images/metalex-sudbourne-stainless-steel-snaplock.JPG);
+    background-size: cover;
+    width: 100%;
+   height: 100%;
+}
+#zinc-img {
+    background-image:url(../images/hispec-ngas-nedzink-noir-good.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+   height: 100%;
+}
+
+.right-padding {
+    padding-left: 60px!important;
+    }
+    .left-padding{
+        padding-right: 60px!important;
+    }
+
+    .section-text {
+        padding: 60px 0 60px 0;
+    }
+    .section-text {
+        position: relative;
+    }
+    .section-text:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 35.33%;
+        background-color: #f6cc08;
+        z-index: -1;}
+
+@media only screen and (max-width: 992px) {
+.section-img-left, .section-img-right {
+    height: 500px;
+    width: 100vw;
+    position: relative;
+    left: 50%; 
+    margin-left: -50vw;
+  
+}
+
+
+
+
+
+.section-text {
+    padding-top: 10px;
+}
+.right-padding {
+  
+    padding-left: calc(var(--bs-gutter-x)/ 2)!important;
+
+}
+.left-padding {
+padding-right: calc(var(--bs-gutter-x)/ 2)!important;
+}
+.reverse {
+    flex-direction: column-reverse;
+}
+
+
+}
+@media only screen and (max-width: 768px) {
+    .section-img {
+        height: 300px;
+        width: 100%;
+    }
+    }
+
+.page-section h1 {
+    text-align: left!important;
+ 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 45px;
+    line-height: 1;
+}
+.page-section h2 {
+    font-size: 24px;
+  margin-bottom: 10px;
+    
+}
+.page-section h3 {
+    font-size: 15px;
+    color: white;
+    background-color: black;
+width: 100%;
+padding: 5px;
+text-align: center;
+}
+
+
+.page-header-img {
+    height: 350px;
+    width: 100%;
+    background-color:black;
+    margin-top: -150px;
+    position: relative;
+}
+#metals-page-header-img {
+    background-image: ;
+    background-size: cover;
+    background-position: center;
+}
+
+.page-title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 45px;
+    line-height: 1;
+    margin-top: 20px;
+    
+}
+
+.page-header {
+margin-top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.crumb{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    line-height: 1;
+    margin-top: 40px;
+
+
+}
+.back-link, .active-page {
+    display: inline;
+   
+}
+.back-link a {
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+}
+.back-link a:hover {
+    color: white;
+    text-decoration: none;
+}
