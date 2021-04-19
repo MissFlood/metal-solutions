@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden!important;
+    max-width: 100%;
 }
 .section-img-left {
     width: 50vw;
