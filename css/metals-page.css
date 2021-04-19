@@ -1,4 +1,6 @@
-
+body {
+    overflow-x: hidden!important;
+}
 .section-img-left {
     width: 50vw;
    position: relative;
