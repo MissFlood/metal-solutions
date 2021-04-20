@@ -2,6 +2,10 @@ body {
     overflow-x: hidden!important;
     max-width: 100%!important;
 }
+#metals-intro {
+
+padding: 60px 0 60px 0;
+}
 .section-img-left {
     width: 50vw;
    position: relative;
@@ -43,9 +47,11 @@ body {
  
 }
 .manufacturer-list div {
-    padding-right: 20px; 
+    padding-right: 0px; 
 }
+.last-padding {
 
+}
 .more-arrow {
    
     width: 19px;
@@ -60,9 +66,9 @@ body {
 }
 
 .manufacturer-link-x3 {
-    width: 100%;
-    padding-bottom: 85%;
-  margin: auto;
+    width: 92%;
+    padding-bottom: 80%;
+
     position: relative;
     overflow: hidden;
  display: block;
@@ -70,6 +76,18 @@ body {
  overflow:hidden;
  box-shadow: 2px 2px 5px rgb(83, 83, 83);
 
+}
+.manufacturer-link-x2 {
+    width: 92%;
+    padding-bottom: 50%;
+    
+  margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+ display: block;
+ text-decoration: none;
+ overflow:hidden;
+ box-shadow: 2px 2px 5px rgb(83, 83, 83);
 }
 .manufacturer-link {
     width: 100%;
@@ -83,6 +101,10 @@ body {
  box-shadow: 2px 2px 5px rgb(83, 83, 83);
 
 }
+
+@media only screen and (max-width: 768px) {
+
+}
 .manufacturer-img {
     position: absolute;
     height: 100%;
@@ -92,6 +114,10 @@ body {
    background-color: white;
    color: black;
 }
+.manufacturer-link-x2:hover .more-arrow {
+    background-color: white;
+    color: black;
+ }
 .manufacturer-link-x3:hover .more-arrow {
     background-color: white;
     color: black;
@@ -99,6 +125,11 @@ body {
 .manufacturer-link:hover .underline {
     text-decoration: underline;
  }
+
+ .manufacturer-link-x2:hover .underline {
+    text-decoration: underline;
+ }
+
  .manufacturer-link-x3:hover .underline {
     text-decoration: underline;
  }
@@ -111,6 +142,10 @@ body {
 }
 #prefa-link {
     background-image: url(../images/prefa_prefalz_2.jpg);
+    background-size: cover;
+}
+#traditional-textures-link {
+    background-image: url(../images/systems/hispec-ral-7016-snaplock.jpg);
     background-size: cover;
 }
 
@@ -233,10 +268,6 @@ width: 100%;
   
 }
 
-
-
-
-
 .section-text {
     padding-top: 10px;
 }
@@ -251,15 +282,19 @@ padding-right: calc(var(--bs-gutter-x)/ 2)!important;
 .reverse {
     flex-direction: column-reverse;
 }
-
-
 }
+
 @media only screen and (max-width: 768px) {
-    .section-img {
-        height: 300px;
-        width: 100%;
+    
+    .section-img-left, .section-img-right {
+        height: 350px;
+        width: 100vw;
+        position: relative;
+        left: 50%; 
+        margin-left: -50vw;
+      
     }
-    }
+}
 
 .page-section h1 {
     text-align: left!important;
