@@ -1,0 +1,52 @@
+
+
+.manufacturer-banner {
+    margin-top: -305px;
+}
+.manufacturer-banner .item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.manufacturer-banner .item .banner-info {
+ float: right;
+ margin-top: 80vh;
+
+}
+.manufacturer-banner .owl-dots {
+    position: relative;
+    bottom: 50px;
+}
+.manufacturer-banner .owl-nav {
+display: none;
+}
+
+.manufacturer-banner h4 {
+font-size: 60px;
+color: white;
+}
+
+#nedzink-page-header {
+background-color: transparent;
+}
+#nedzink-header-logo {
+    width: 300px;
+}
+
+
+.page-header-img {
+    z-index: 1000;
+}
+#nz-naturel-banner {
+    background-image: url(../images/jack-house-nedzink-naturel-good.JPG);
+}
+#nz-neo-banner {
+    background-image: url(../images/phillips-nedzink-neo.jpeg);
+}
+#nz-noir-banner {
+    background-image: url(../images/hispec-ngas-nedzink-noir-good.jpg);
+}
+
+#about-nedzink {
+    padding: 60px 0 60px 0;
+}
