@@ -50,3 +50,121 @@ background-color: transparent;
 #about-nedzink {
     padding: 60px 0 60px 0;
 }
+
+#nedzink-gallery {
+    margin: 3px;
+}
+  .gallery-container {
+    position: relative;
+    padding: 3px;
+  width: 33.33%;
+    float: left;
+  }
+
+ #nedzink-gallery .row {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+  
+  .gallery-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff44;
+  }
+  
+  .gallery-container:hover .gallery-overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .zoom-icon {
+ 
+      width: 100px!important;
+  }
+
+  .gallery-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.filter-button:hover {
+  color: white;
+  background-color: black;
+}
+.filter-button.active{
+    background-color: #000000!important;
+    color: white;
+}
+
+
+.filter-button {
+  display: block;
+  width: 150px;
+  padding: 10px;
+  margin-top: 30px;
+  border: solid black 1px;
+margin: 0 7px 4px 0;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 0px;
+}
+
+.filter-buttons-container {
+display: flex;
+
+}
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+	-webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.block{
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
