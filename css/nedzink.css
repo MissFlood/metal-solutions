@@ -1,5 +1,15 @@
+body {
+  padding-left: env(safe-area-inset-left); 
+  padding-right: env(safe-area-inset-right); 
+}
 
 
+.finishes-section h2, .tabs-section h2, .downloads-section h2, .gallery-section h2 {
+  font-size: 24px;
+font-weight: bold;
+
+}
+/* #region Banner Section */
 .manufacturer-banner {
     margin-top: -305px;
 }
@@ -26,17 +36,11 @@ font-size: 60px;
 color: white;
 }
 
-#nedzink-page-header {
-background-color: transparent;
-}
 #nedzink-header-logo {
     width: 300px;
 }
 
 
-.page-header-img {
-    z-index: 1000;
-}
 #nz-naturel-banner {
     background-image: url(../images/jack-house-nedzink-naturel-good.JPG);
 }
@@ -46,13 +50,12 @@ background-color: transparent;
 #nz-noir-banner {
     background-image: url(../images/hispec-ngas-nedzink-noir-good.jpg);
 }
+/* #endregion */
 
-#about-nedzink {
-    padding: 60px 0 60px 0;
-}
-
-#nedzink-gallery {
+/* #region Gallery Section */
+.gallery-section {
     margin: 3px;
+    padding-top: 70px;
 }
   .gallery-container {
     position: relative;
@@ -61,7 +64,7 @@ background-color: transparent;
     float: left;
   }
 
- #nedzink-gallery .row {
+ .gallery-section .row {
     margin-right: 0!important;
     margin-left: 0!important;
 }
@@ -112,7 +115,7 @@ background-color: transparent;
   color: white;
   background-color: black;
 }
-.filter-button.active{
+.filter-button.active {
     background-color: #000000!important;
     color: white;
 }
@@ -120,9 +123,7 @@ background-color: transparent;
 
 .filter-button {
   display: block;
-  width: 150px;
   padding: 10px;
-  margin-top: 30px;
   border: solid black 1px;
 margin: 0 7px 4px 0;
   color: inherit;
@@ -137,34 +138,171 @@ margin: 0 7px 4px 0;
 
 .filter-buttons-container {
 display: flex;
+margin-bottom: 30px;
 
 }
-.port-image
-{
-    width: 100%;
+/* #endregion */
+
+/* #region Downloads Section */
+.downloads-section {
+  padding: 70px 0 60px 0;
+
 }
 
-.gallery_product
-{
-	-webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+.downloads-section div a {
+
+  margin: 20px;
 }
 
-.block{
-    opacity: 0;
+
+
+.downloads-section div a img {
+  height: 297px;
+  width: 210px;
+  box-shadow: rgb(184, 184, 184) 2px 2px 5px;
+  object-fit: cover;
 }
 
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+.downloads-section div a {
+text-decoration: none!important;
+color: black;
+font-size: 14px;
+text-transform: capitalize;
 }
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+
+.downloads-section div a figcaption {
+margin-top: 10px;
+text-align: center;
 }
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+
+
+.downloads-section div a img:hover {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  box-shadow: rgb(167, 167, 167) 2px 2px 5px;
 }
+.downloads-container {
+  margin-top: -20px;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+
+
+}
+/* #endregion */
+
+/* #region Tabs */
+.nav-pills {
+  margin-top: 70px;
+}
+.tab-pane h2 {
+margin: 20px 0 20px 0;
+}
+#pill-1-img {
+object-fit: cover;
+padding: 0 0 0 30px;
+}
+
+#pill-2-img {
+  object-fit: cover;
+ padding-right: 30px;
+  }
+
+
+#pills-2 .row {
+  flex-direction: column;
+}
+.nav-pills {
+  margin-top: 0px;
+
+}
+.nav-pills .nav-link:hover {
+  font-weight: bold;
+  }
+  
+  .nav-pills .nav-link.active {
+  background-color: transparent;
+  color:#000000;
+  font-weight: bold;
+  text-decoration: underline;
+  }
+  
+  .nav-pills .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 500;
+  border-radius: 0px;
+  padding: 20px;
+  padding-left: 0px;
+  color:#000000;
+  }
+
+
+  .tabs-section {
+padding-top: 50px;
+padding-bottom: 90px;
+  }
+
+/* #endregion */
+
+/* #region Finishes Section */
+.line {
+  height: 50px;
+border-right: solid 1px;
+
+}
+
+.finishes-section {
+padding: 70px 0 70px 0;
+}
+.finishes-section .nav-link {
+  padding: 0px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.line-container {
+  padding: 0;
+  --bs-gutter-x: 0;
+}
+.line-container div {
+  padding-right: 10px;
+
+
+
+}
+
+.sample-overlay {
+  position: absolute;
+  bottom: 0!important;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+ 
+}
+#naturel-tab .sample-overlay h4 {
+  color: rgb(34, 34, 34);
+}
+
+.finishes-section .nav-link:hover .sample-overlay {
+  opacity: 1;
+}
+.sample-overlay h4 {
+
+  color: rgb(255, 255, 255);
+ width: 100%;
+  text-align: center;
+padding: 10px;
+text-transform: capitalize;
+font-size: 13px;
+}
+
+.finishes-section .nav-item .nav-link.active .sample-overlay {
+  opacity:1;
+}
+.nav-link.active  .sample-overlay{
+  opacity:1;
+}
+/* #endregion */
