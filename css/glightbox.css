@@ -839,3 +839,21 @@ iframe.wait-autoplay {
     background: #000;
   }
 }
+
+@media (max-width: 48em) {
+  .glightbox-container .ginner-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  
+  .glightbox-clean .gprev {
+    top: 45%;
+    left: 0;
+  }
+  .glightbox-clean .gnext {
+    top: 45%;
+    right: 0;
+  }
+}

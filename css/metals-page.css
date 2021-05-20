@@ -4,14 +4,20 @@ body {
 }
 
 .page-header-img {
-    height: 350px;
-    width: 100%;
-    background-color: rgb(26, 26, 26);
-    margin-top: -150px;
-    position: relative;
+    position: absolute;
+    top:0;
+   width: 100%;
+   padding-top: 12em;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-end;
+   padding-bottom: 3em;
 }
 
+#metals-page-header-img {
+    background-color: black;
 
+}
 .page-title {
     color: white;
     text-transform: uppercase;
@@ -23,7 +29,6 @@ body {
 }
 
 .page-header {
-margin-top: 200px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -33,27 +38,34 @@ margin-top: 200px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 11px;
+    font-weight: bold;
     line-height: 1;
     margin-top: 40px;
 
 
 }
+
 .back-link, .active-page {
     display: inline;
+}
+.active-page span {
+    
+    text-decoration: underline;
    
 }
 .back-link a, .back-link {
-    color: rgb(199, 199, 199);
-    text-decoration: none;
-}
-.back-link a:hover {
     color: white;
     text-decoration: none;
+}
+.back-link a span:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 
 .intro {
-    padding: 60px 0 60px 0;
+    padding-top: 20em;
+    padding-bottom: 4em;
     }
 
     .page-section h1 {

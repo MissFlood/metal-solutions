@@ -4,6 +4,10 @@ var lightboxDescription = GLightbox({
 
 
 function call(id) {
+  document.querySelectorAll('.filter-button').forEach(button => {
+    button.classList.remove('active');
+  })
+  document.querySelector('button#'+id+'.btn.filter-button').classList.add('active');
   const items = Array.from(document.getElementsByClassName("filter"));
   items.map(function (item, index) {
     console.log(item);

@@ -14,6 +14,14 @@ body {
  overflow-x:hidden;
 }
 
+@media only screen and (max-width: 768px) {
+body {
+  line-height: 2;
+ 
+}
+
+}
+
 #who-we-are {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -130,6 +138,11 @@ text-decoration: none;
 .grey-theme {
   background-color: rgb(230, 230, 230);
 }
+@media only screen and (max-width: 768px) {
+  .grey-theme {
+    color: #202020;
+  }
+  }
 /* #endregion */
 
 /* #region Picture Scroll Background */
@@ -226,7 +239,11 @@ color: #b8b8b8;
 .white-theme a {
   color: #595959;
 }
- 
+@media only screen and (max-width: 768px) {
+.white-theme {
+  color: #202020;
+}
+}
  /* #endregion */
 
 /* #region About Section */
@@ -349,6 +366,7 @@ height: 16px;
   max-width: 100%;
 overflow-x: hidden;
 }
+
 .carousel {
   width: 2000px;
 }
