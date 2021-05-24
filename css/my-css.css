@@ -140,7 +140,7 @@ text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
   .grey-theme {
-    color: #202020;
+    color: #383838;
   }
   }
 /* #endregion */
@@ -241,7 +241,7 @@ color: #b8b8b8;
 }
 @media only screen and (max-width: 768px) {
 .white-theme {
-  color: #202020;
+  color: #383838;
 }
 }
  /* #endregion */
@@ -354,6 +354,7 @@ height: 16px;
   width: 100%;
 
 }
+
 /* #endregion */
 
 /* #region Moving Home Image */
@@ -393,7 +394,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
 /* #endregion */
 
 /* #region Moving Welcome Text */
-#welcome-text-wrapper {
+.welcome-text-wrapper {
   position: absolute;
   top: 0;
   width: 100%;
@@ -401,6 +402,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1000;
 }
 .word-carousel {
   height: ;
@@ -409,7 +411,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
   width : 100%;
   height: ;
 }
-#welcome-text-wrapper .item h1 {
+.welcome-text-wrapper .item h1 {
  text-align: center;
   font-size: 4rem;
   font-weight: 400!important;
@@ -420,14 +422,16 @@ background-size: cover; /* Resize the background image to cover the entire conta
   padding-top:0px!important;
   margin-top: 0px!important;
   }
-  #welcome-text-wrapper .more-button {
+  .welcome-text-wrapper .more-button {
     border-color: white;
     color: white;
     margin-top: 0px;
+    border-radius: 30px;
   }
-  #welcome-text-wrapper .more-button:hover {
-    background-color: white;
-    color: black;
+  .welcome-text-wrapper .more-button:hover {
+    background-color: #383838;
+    color: white;
+    border-color: #383838;
   }
 .top-welcome-text {
   width: 100%;
@@ -450,7 +454,7 @@ background-size: cover; /* Resize the background image to cover the entire conta
     margin-bottom: 10px;
   }
 
-  #welcome-text-wrapper .item h1 {
+  .welcome-text-wrapper .item h1 {
     font-size: 44px;
     display:table-cell; vertical-align:middle;
     line-height: 1.2;
@@ -458,7 +462,11 @@ background-size: cover; /* Resize the background image to cover the entire conta
     
   }
  
-
+  .top-welcome-text p {
+  
+    font-size: 13px;
+  
+  }
 }
 /* #endregion */
 
@@ -471,8 +479,16 @@ background-size: cover; /* Resize the background image to cover the entire conta
   margin-top: 48px;
 }
 .navbar {
-  background-color: rgb(26, 26, 26)!important;
+  background-color: rgba(26, 26, 26, 0)!important;
+  padding-top: 0px;
+  padding-bottom: 0px;
   
+}
+.navbar-dark .navbar-toggler {
+  color: transparent;
+}
+.navbar-toggler {
+  border-color: transparent!important;
 }
 .navbar-nav li {
   border-bottom: solid 1px #333;
@@ -483,6 +499,9 @@ background-size: cover; /* Resize the background image to cover the entire conta
 }
 .navbar-nav {
   height: 100%;
+    height: 90vh;
+    overflow-y:scroll;
+    background-color: rgba(26, 26, 26, 1)!important;
 }
 .navbar-nav a {
   color: white!important;
@@ -572,6 +591,13 @@ color: inherit;
     background-color: black;
   }
 }
+
+.navbar.solid {
+  background-color: rgb(26, 26, 26, 1)!important;
+  transition: background-color 1s ease 0s;
+  box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
 /* #endregion */
 
 /* #region Stats Section */
