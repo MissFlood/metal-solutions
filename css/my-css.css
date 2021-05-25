@@ -345,6 +345,11 @@ height: 16px;
 /* #endregion */
 
 /* #region Sticky Nav Bar DESKTOP */
+.nav-link:focus,.nav-link:active {
+  outline: none!important;
+  box-shadow: none;
+}
+
 @media only screen and (min-width: 1400px) {
   .navbar-brand {
     position: absolute;
@@ -580,13 +585,20 @@ color: inherit;
 
   }
   .navbar .dropdown-menu {
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0);
+margin-top:7px;
   }
+  
+
   .dropdown-item:hover {
-    background-color: rgb(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
   
   }
-  
+  .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link.show {
+text-decoration: underline;
+  }
+
+
   .navbar-expand-lg .navbar {
     background-color: black;
   }

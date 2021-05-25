@@ -22,6 +22,7 @@ height: 50px;
 }
 .scroll-top p {
   text-align: center;
+  color:#777777;
 }
 .scroll-top-icon:hover {
   transform: rotate(360deg);
@@ -65,10 +66,10 @@ font-style: italic;
   .scroll-top {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: 20px;
     width: 150px;
-    border-radius: 20px 20px 0 0;
-    height: 30px;
+    border-radius: 20px;
+    height: 35px;
     display: flex;
 
   }
@@ -77,13 +78,16 @@ font-style: italic;
   filter: unset;
  }
  .scroll-top p {
-   margin-top: -35px;
+margin-top: -32px;
    color: white;
- }
- .scroll-top-icon {
-   width: 40px;
 
  }
+ .scroll-top-icon {
+  width: 40px;
+  margin-top: -3px;
+
+ }
+
 }
 .black-background {
   background-color: black;
@@ -199,6 +203,12 @@ font-size: 30px;
 #nz-noir-banner {
     background-image: url(../images/hispec-ngas-nedzink-noir-good.jpg);
 }
+
+@media only screen and (max-width:768px) {
+  #nz-noir-banner {
+    background-image: url(../images/hispec-ngas-nedzink-noir-good-mobile.jpg);
+}
+}
 /* #endregion */
 
 /* #region Gallery Section */
@@ -312,7 +322,7 @@ color: white;
     text-transform: uppercase;
     background-color: white;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 500;
   border-radius: 40px;
   padding:10px;
@@ -427,8 +437,11 @@ margin: 20px 0 20px 0;
 
   }
   @media only screen and (max-width: 768px) {
-.pill-1-img{
-  max-height: 250px;
+.pill-1-img, .pill-3-img{
+  max-height: 320px;
+}
+.nav-pills .nav-link {
+  font-size: 12px!important;
 }
   }
 #pills-2 .row {
@@ -477,7 +490,7 @@ padding-bottom: 9em;
       position: sticky;
       top: 46px;
       background-color: white;
-      z-index: 0;
+      z-index: 1000;
     }
     .tabs-section .nav-pills {
 flex-direction: column;

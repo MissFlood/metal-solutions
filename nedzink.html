@@ -19,6 +19,8 @@
 <!-- Filter Gallery CSS -->
 <link rel="stylesheet" href="css/glightbox.css">
 
+<!-- Animations CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -149,6 +151,12 @@
 <div class="owl-wrapper">
 <div class="owl-carousel owl-theme">
 
+  <div class="item" id="nz-noir-banner">
+    <div class="container">
+      <div class="banner-info"></div>
+      </div>
+    </div>
+
   <div class="item" id="nz-naturel-banner">
     <div class="container">
       <div class="banner-info"></div>
@@ -162,11 +170,7 @@
       </div>
 
       
-    <div class="item" id="nz-noir-banner">
-      <div class="container">
-        <div class="banner-info"></div>
-        </div>
-      </div>
+    
   
 </div>
 </div>
@@ -199,11 +203,11 @@
 <div></div>
 
   <div>
-  <h1> NedZink</h1>
-  <div class="top-welcome-text"><p>The highest quality Dutch zinc..</p></div>
+  <h1 data-aos="fade-right" data-aos-duration="1000"> NedZink</h1>
+  <div data-aos="fade-right" data-aos-duration="1000" class="top-welcome-text"><p>The highest quality Dutch zinc.</p></div>
 </div>
 
-<div class="banner-buttons">
+<div data-aos="fade-left" data-aos-duration="1000" class="banner-buttons">
     <a class="more-button" href="#nedzink-finishes">Finishes</a>
     <a class="more-button" href="#nedzink-downloads">Downloads</a>
     <a class="more-button" href="#nedzink-gallery">Gallery</a>
@@ -233,9 +237,9 @@
     <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
       <section id="about-nedzink" class="white-theme">
       
-      <h2>More than 100 years experience, quality and flexibility.</h2>
-      <div class="row">
-        <div id="pill-1-text" class="col-xl-7 col-lg-12">
+      <h2 data-aos="fade-down" data-aos-duration="1000">More than 100 years experience, quality and flexibility.</h2>
+      <div style="overflow-x:hidden;" class="row">
+        <div data-aos="fade-right" data-aos-duration="1000" id="pill-1-text" class="col-xl-7 col-lg-12">
         
       <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ullamcorper nibh metus, vel venenatis tortor rutrum a. Nunc elementum suscipit nisi, vitae dignissim nisi aliquam vitae. Suspendisse potenti. Mauris sit amet consequat mauris. Quisque massa nulla, malesuada ut egestas nec, accumsan at lectus. Morbi eget ex a sem feugiat iaculis et nec enim. Suspendisse viverra tristique ex eu placerat. Aenean in tortor mattis, vehicula mi vel, faucibus tortor. Maecenas vel erat eu nisl posuere porttitor. Cras at neque sit amet turpis ultricies congue id vel diam. Suspendisse tempus malesuada libero in cursus. Proin eu tincidunt sapien.
@@ -249,7 +253,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
 
     </div>
   
-      <img class="pill-1-img col-xl-5 col-lg-12" src="images/e&a-stumperlowe-nedzink-noir-good.JPG">
+      <img data-aos="fade-left" data-aos-duration="1000" class="pill-1-img col-xl-5 col-lg-12" src="images/e&a-stumperlowe-nedzink-noir-good.JPG">
   </div>
 </section>
  </div>
@@ -295,14 +299,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
 
 <!-- Finishes -->
 <section id="nedzink-finishes" class="finishes grey-theme">
-  <h2>Finishes</h2>
+  <h2 data-aos="fade-down" data-aos-duration="1000">Finishes</h2>
 
  <!-- Finishes Desktop --> 
 <div class="finishes-block container">
 
-  <ul class="nav nav-pills row" id="pills-tab" role="tablist">
+  <ul style="overflow-x: hidden; overflow-y: hidden;" class="nav nav-pills row" id="pills-tab" role="tablist">
 
-    <li class="nav-item col-2">
+    <li data-aos="fade-up" data-aos-duration="1000" class="nav-item col-2">
       <a style="display: block; position: relative;" class="nav-link active" id="naturel-tab" data-toggle="pill" href="#naturel" role="tab" aria-controls="naturel" aria-selected="true">  
         <img id="nz-naturel-sample" class="sample img-fluid" src="images/finishes/nedzink/nz-naturel.jpg" alt="NedZink Naturel Sample">
         <div class="sample-overlay">
@@ -311,7 +315,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
       </a>
 
     </li>
-    <li class="nav-item col-2">
+    <li data-aos="fade-up" data-aos-duration="1000" class="nav-item col-2">
       <a class="nav-link" id="neo-tab" data-toggle="pill" href="#neo" role="tab" aria-controls="neo" aria-selected="false">
         <img id="nz-neo-sample" class="sample img-fluid" src="images/finishes/nedzink/nz-neo.jpg" alt="NedZink Neo Sample">
         <div class="sample-overlay">
@@ -321,7 +325,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
       </a>
 
     </li>
-    <li class="nav-item col-2">
+    <li data-aos="fade-up" data-aos-duration="1000" class="nav-item col-2">
       <a class="nav-link" id="noir-tab" data-toggle="pill" href="#noir" role="tab" aria-controls="noir" aria-selected="false">
         <img id="nz-noir-sample" class="sample img-fluid" src="images/finishes/nedzink/nz-noir.jpg" alt="NedZink Noir Sample">
         <div class="sample-overlay">
@@ -330,7 +334,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
       </a>
     </li>
 
-    <li class="nav-item col-2">
+    <li data-aos="fade-up" data-aos-duration="1000" class="nav-item col-2">
       <a class="nav-link" id="nuance-red-tab" data-toggle="pill" href="#nuance-red" role="tab" aria-controls="nuance-red" aria-selected="false">
         <img id="nz-nuance-red-sample" class="sample img-fluid" src="images/finishes/nedzink/nz-nuance-red.jpg" alt="NedZink Nuance Red Sample">
         <div class="sample-overlay">
@@ -338,7 +342,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
          </div>
       </a>
     </li>
-    <li class="nav-item col-2">
+    <li data-aos="fade-up" data-aos-duration="1000" class="nav-item col-2">
       <a class="nav-link" id="nuance-blue-tab" data-toggle="pill" href="#nuance-blue" role="tab" aria-controls="nuance-blue" aria-selected="false">
         <img id="nz-nuance-blue-sample" class="sample img-fluid" src="images/finishes/nedzink/nz-nuance-blue.jpg" alt="NedZink Nuance Blue Sample">
         <div class="sample-overlay">
@@ -347,7 +351,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
      
       </a>
     </li>
-    <li class="nav-item col-2">
+    <li data-aos="fade-up" data-aos-duration="1000" class="nav-item col-2">
       <a class="nav-link" id="nuance-green-tab" data-toggle="pill" href="#nuance-green" role="tab" aria-controls="nuance-green" aria-selected="false">
         <img id="nz-nuance-green-sample" class="sample img-fluid" src="images/finishes/nedzink/nz-nuance-green.jpg" alt="NedZink Nuance Green Sample">
         <div class="sample-overlay">
@@ -365,7 +369,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex a sem feu
       </div>
     </div>
       <div class="container">
-        <p>NedZink NATUREL is a durable, aesthetic and maintenance-free building material that becomes increasingly attractive over the years under the influence of the weather conditions. A natural zinc patina layer forms on the surface. This property means NedZink NATUREL is mainly used where a natural and lively appearance, high cost-effectiveness and a long life are required.
+        <p data-aos="fade-right" data-aos-duration="1000">NedZink NATUREL is a durable, aesthetic and maintenance-free building material that becomes increasingly attractive over the years under the influence of the weather conditions. A natural zinc patina layer forms on the surface. This property means NedZink NATUREL is mainly used where a natural and lively appearance, high cost-effectiveness and a long life are required.
       </p>
     </div>
     
@@ -462,10 +466,10 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 <!-- Finishes Mobile -->
 <div class="group-1 mobile-finishes-block">
 
-  <p class="container">Tap for more information about each finish.</p>
-  <div class="sample-buttons row">
+  <p data-aos="fade-down" data-aos-duration="1000" class="container">Tap for more information about each finish.</p>
+  <div style="overflow-x: hidden" class="sample-buttons row">
 
-    <div class="sample-item col-6">
+    <div data-aos="fade-right" data-aos-duration="1000" class="sample-item col-6">
   <a class="" data-toggle="collapse" href="#naturel-description" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
     <img src="images/finishes/nedzink/nz-naturel.jpg">
     <div class="sample-overlay">
@@ -474,7 +478,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
   </a>
     </div>
 
-    <div class="sample-item col-6">
+    <div data-aos="fade-left" data-aos-duration="1000" class="sample-item col-6">
       <a class="" data-toggle="collapse" href="#neo-description" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
         <img src="images/finishes/nedzink/nz-neo.jpg">
         <div class="sample-overlay">
@@ -507,9 +511,9 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 
 
 
-<div class="sample-buttons row">
+<div style="overflow-x: hidden;" class="sample-buttons row">
 
-  <div class="sample-item col-6">
+  <div data-aos="fade-right" data-aos-duration="1000" class="sample-item col-6">
 <a class="" data-toggle="collapse" href="#noir-description" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
   <img src="images/finishes/nedzink/nz-noir.jpg">
   <div class="sample-overlay">
@@ -518,7 +522,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </a>
   </div>
 
-  <div class="sample-item col-6">
+  <div data-aos="fade-left" data-aos-duration="1000" class="sample-item col-6">
     <a class="" data-toggle="collapse" href="#nuance-red-description" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
       <img src="images/finishes/nedzink/nz-nuance-red.jpg">
       <div class="sample-overlay">
@@ -554,9 +558,9 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </div>
 
 
-<div class="sample-buttons row">
+<div style="overflow-x:hidden;" class="sample-buttons row">
 
-  <div class="sample-item col-6">
+  <div data-aos="fade-right" data-aos-duration="1000" class="sample-item col-6">
 <a class="" data-toggle="collapse" href="#nuance-blue-description" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
   <img src="images/finishes/nedzink/nz-nuance-blue.jpg">
   <div class="sample-overlay">
@@ -565,7 +569,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </a>
   </div>
 
-  <div class="sample-item col-6">
+  <div data-aos="fade-left" data-aos-duration="1000" class="sample-item col-6">
     <a class="" data-toggle="collapse" href="#nuance-green-description" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
       <img src="images/finishes/nedzink/nz-nuance-green.jpg">
       <div class="sample-overlay">
@@ -608,10 +612,10 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 <div class="group-2 tablet-finishes-block container">
 
 
-  <p class="container">Tap for more information about each finish.</p>
-  <div class="sample-buttons row">
+  <p data-aos="fade-down" data-aos-duration="1000" class="container">Tap for more information about each finish.</p>
+  <div style="overflow-y: hidden;" class="sample-buttons row">
 
-    <div class="sample-item col-4">
+    <div data-aos="fade-up" data-aos-duration="1000" class="sample-item col-4">
   <a class="" data-toggle="collapse" href="#naturel-description-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
     <img src="images/finishes/nedzink/nz-naturel.jpg">
     <div class="sample-overlay">
@@ -620,7 +624,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
   </a>
     </div>
 
-    <div class="sample-item col-4">
+    <div data-aos="fade-up" data-aos-duration="1000" class="sample-item col-4">
       <a class="" data-toggle="collapse" href="#neo-description-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
         <img src="images/finishes/nedzink/nz-neo.jpg">
         <div class="sample-overlay">
@@ -629,7 +633,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
       </a>
         </div>
 
-        <div class="sample-item col-4">
+        <div data-aos="fade-up" data-aos-duration="1000" class="sample-item col-4">
           <a class="" data-toggle="collapse" href="#noir-description-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
             <img src="images/finishes/nedzink/nz-noir.jpg">
             <div class="sample-overlay">
@@ -676,9 +680,9 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 
 </div>
 
-<div class="sample-buttons row">
+<div style="overflow-y: hidden;" class="sample-buttons row">
 
-  <div class="sample-item col-4">
+  <div data-aos="fade-up" data-aos-duration="1000" class="sample-item col-4">
     <a class="" data-toggle="collapse" href="#nuance-red-description-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
       <img src="images/finishes/nedzink/nz-nuance-red.jpg">
       <div class="sample-overlay">
@@ -687,7 +691,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
     </a>
       </div>
 
-      <div class="sample-item col-4">
+      <div data-aos="fade-up" data-aos-duration="1000" class="sample-item col-4">
         <a class="" data-toggle="collapse" href="#nuance-blue-description-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
           <img src="images/finishes/nedzink/nz-nuance-blue.jpg">
           <div class="sample-overlay">
@@ -696,7 +700,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
         </a>
           </div>
         
-          <div class="sample-item col-4">
+          <div data-aos="fade-up" data-aos-duration="1000" class="sample-item col-4">
             <a class="" data-toggle="collapse" href="#nuance-green-description-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
               <img src="images/finishes/nedzink/nz-nuance-green.jpg">
               <div class="sample-overlay">
@@ -764,58 +768,58 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 <!-- Downloads -->
 <section id="nedzink-downloads" class="downloads-section white-theme">
   <div class="container">
-<h2>Downloadable Literature</h2>
+<h2 data-aos="fade-down" data-aos-duration="1000">Downloadable Literature</h2>
   <div class="downloads-container">
 
-  <a target="_blank" href="downloads/nedzink/nedzink-corporate-brochure.pdf">
+  <a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-corporate-brochure.pdf">
     <figure>
     <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-corporate-brochure-thumb.jpg">
   <figcaption>Corporate brochure</figcaption>
   </figure>
   </a>
   
-  <a target="_blank" href="downloads/nedzink/nedzink-delivery-program.pdf">
+  <a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-delivery-program.pdf">
     <figure>
     <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-delivery-program-thumb.jpg">
  <figcaption>Delivery program</figcaption>
   </figure> 
 </a>
 
-<a target="_blank" href="downloads/nedzink/nedzink-technical-handbook.pdf">
+<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-technical-handbook.pdf">
   <figure>
   <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-technical-handbook-thumb.jpg">
 <figcaption>Technical handbook</figcaption>
 </figure> 
 </a>
-<a target="_blank" href="downloads/nedzink/nedzink-naturel-data-sheet.pdf">
+<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-naturel-data-sheet.pdf">
   <figure>
 <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-naturel-data-sheet-thumb.jpg">
 <figcaption>NedZink Naturel data sheet</figcaption>
 </figure> 
 </a>
 
-<a target="_blank" href="downloads/nedzink/nedzink-neo-data-sheet.pdf">
+<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-neo-data-sheet.pdf">
   <figure>
 <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-neo-data-sheet-thumb.jpg">
 <figcaption>NedZink Neo data sheet</figcaption>
 </figure> 
 </a>
 
-<a target="_blank" href="downloads/nedzink/nedzink-noir-data-sheet.pdf">
+<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-noir-data-sheet.pdf">
   <figure>
 <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-noir-data-sheet-thumb.jpg">
 <figcaption>NedZink Noir data sheet</figcaption>
 </figure> 
 </a>
 
-<a target="_blank" href="downloads/nedzink/nedzink-nuance-data-sheet.pdf">
+<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-nuance-data-sheet.pdf">
   <figure>
 <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-nuance-data-sheet-thumb.jpg">
 <figcaption>NedZink Nuance data sheet</figcaption>
 </figure> 
 </a>
 
-<a target="_blank" href="downloads/nedzink/nedzink-naturel-epd.pdf">
+<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-naturel-epd.pdf">
   <figure>
 <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-naturel-epd-thumb.jpg">
 <figcaption>NedZink Naturel EPD</figcaption>
@@ -823,7 +827,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </a>
 
 
-<a target="_blank" href="downloads/nedzink/nedzink-nova-noir-epd.pdf">
+<a data-aos="fade-up" data-aos-duration="1000" target="_blank" href="downloads/nedzink/nedzink-nova-noir-epd.pdf">
   <figure>
 <img class="downloads-thumbnail" src="images/download-thumbnails/nedzink-nova-noir-epd-thumb.jpg">
 <figcaption>**NedZink Nova & Noir EPD</figcaption>
@@ -840,9 +844,9 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 <!-- Gallery -->
 <section id="nedzink-gallery" class="gallery-section grey-theme">
     <div class="gallery container">
-      <h2>Gallery</h2>
+      <h2 data-aos="fade-down" data-aos-duration="1000">Gallery</h2>
       
-      <div class="filter-buttons-container justify-content-center">
+      <div data-aos="fade-down" data-aos-duration="1000" class="filter-buttons-container justify-content-center">
         <button class="btn filter-button active" id="all" onclick="call(this.id)">All</button>
         <button class="btn filter-button" id="naturel" onclick="call(this.id)">NedZink Naturel</button>
         <button class="btn filter-button"  id="neo" onclick="call(this.id)">NedZink Neo</button>
@@ -852,7 +856,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
     </div>
 
 <div class="row">
-    <a href="images/jack-house-nedzink-naturel-good.JPG" 
+    <a data-aos="fade-up" data-aos-duration="1000" href="images/jack-house-nedzink-naturel-good.JPG" 
     class="gallery-container glightbox gallery_product filter naturel">
       <img class="" src="images/jack-house-nedzink-naturel-good.JPG" alt="lemon">
       <div class="gallery-overlay">
@@ -860,7 +864,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
       </div>
     </a>
 
-      <a href="images/nedzink.jpeg" class="gallery-container glightbox gallery_product filter neo">
+      <a data-aos="fade-up" data-aos-duration="1000" href="images/nedzink.jpeg" class="gallery-container glightbox gallery_product filter neo">
   <img class="" src="images/nedzink.jpeg" alt="lemon">
   <div class="gallery-overlay">
     <div class="text"><img class="zoom-icon" src="images/zoom-icon.png" alt=" Zoom Icon"></div>
@@ -868,7 +872,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
 </a>
      
      
-            <a href="images/hispec-ngas-nedzink-noir-good.jpg" class="gallery-container glightbox gallery_product filter noir">
+            <a data-aos="fade-up" data-aos-duration="1000" href="images/hispec-ngas-nedzink-noir-good.jpg" class="gallery-container glightbox gallery_product filter noir">
               <img class="" src="images/hispec-ngas-nedzink-noir-good.jpg"  alt="lemon" data-target="#carouselExample" data-slide-to="2">
               <div class="gallery-overlay">
                 <div class="text"><img class="zoom-icon" src="images/zoom-icon.png" alt=" Zoom Icon"></div>
@@ -876,7 +880,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
             </a>      
 
 
-            <a href="images/jack-house-nedzink-naturel-good.JPG" 
+            <a data-aos="fade-up" data-aos-duration="1000" href="images/jack-house-nedzink-naturel-good.JPG" 
             class="gallery-container glightbox gallery_product filter naturel">
               <img class="" src="images/jack-house-nedzink-naturel-good.JPG" alt="lemon">
               <div class="gallery-overlay">
@@ -884,7 +888,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
               </div>
             </a>
         
-              <a href="images/nedzink.jpeg" class="gallery-container glightbox gallery_product filter neo">
+              <a data-aos="fade-up" data-aos-duration="1000" href="images/nedzink.jpeg" class="gallery-container glightbox gallery_product filter neo">
           <img class="" src="images/nedzink.jpeg" alt="lemon">
           <div class="gallery-overlay">
             <div class="text"><img class="zoom-icon" src="images/zoom-icon.png" alt=" Zoom Icon"></div>
@@ -892,7 +896,7 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
         </a>
              
              
-                    <a href="images/hispec-ngas-nedzink-noir-good.jpg" class="gallery-container glightbox gallery_product filter noir">
+                    <a data-aos="fade-up" data-aos-duration="1000" href="images/hispec-ngas-nedzink-noir-good.jpg" class="gallery-container glightbox gallery_product filter noir">
                       <img class="" src="images/hispec-ngas-nedzink-noir-good.jpg"  alt="lemon" data-target="#carouselExample" data-slide-to="2">
                       <div class="gallery-overlay">
                         <div class="text"><img class="zoom-icon" src="images/zoom-icon.png" alt=" Zoom Icon"></div>
@@ -1023,6 +1027,11 @@ $(document).ready(function() {
 
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   <script>
   $('.owl-carousel').owlCarousel({
     loop:true,
@@ -1037,12 +1046,14 @@ animateOut: 'fadeOut',
             items:1,
             nav:true,
             loop: true,
+            autoplay:false,
             dots: false
         },
         600:{
             items:1,
             loop: true,
             nav:false,
+            autoplay:false,
             dots: false
         },
         1000:{
