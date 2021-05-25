@@ -309,7 +309,12 @@ padding-top: 40px;
   background-color: rgb(48, 48, 48);
   color: white;
   }
-  
+  @media only screen and (max-width: 992px) {
+    .filter-button:hover {
+      background-color: rgb(255, 255, 255);
+      color: #000000;
+      }
+      }
   .filter-button.active {
 
 background-color: rgb(48, 48, 48);
