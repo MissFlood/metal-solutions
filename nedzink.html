@@ -917,83 +917,66 @@ NedZink NUANCE is mainly used for aesthetically high quality building applicatio
           <div>
 
 
-            <form method="post" action="https://formspree.io/f/myylwzqn">
-            
+            <form id="nedzink-form" method="post" action="https://formspree.io/f/myylwzqn">
+
+       
+            <label for="nedzink-name">
+              <input type="text" id="nedzink-name" class="form-control" name="name" placeholder="Name" required>
+            </label>
+    
+            <label for="nedzink-number">
+              <input type="tel" id="nedzink-number" class="form-control" name="number" placeholder="Number" required>
+            </label>
+            <label for="nedzink-email">
+              <input type="text" id="nedzink-email" class="form-control" name="email" placeholder="Email" required>
+            </label>
+<label for="upload-nedzink-drawings">
+  <input type="file" id="upload-nedzink-drawings" name="drawings" class="form-control">
+</label>
+<label for="nedzink-message">
+  <textarea class="form-control" rows="3" id="nedzink-message" name="message" placeholder="Message">
+  </textarea>
+</label>
+
                 <label for="checkbox-naturel">
-                  <input type="checkbox" id="checkbox-naturel" name="nz-sample-request" value="nedzink naturel">
+                  <input type="checkbox" id="checkbox-naturel" name="nedzink-sample-request" value="nedzink naturel">
                   NedZink Naturel
                 </label>
                 <label for="checkbox-neo">
-                  <input type="checkbox" id="checkbox-neo" name="nz-sample-request" value="nedzink neo">
+                  <input type="checkbox" id="checkbox-neo" name="nedzink-sample-request" value="nedzink neo">
                   NedZink Neo
                 </label>
                 <label for="checkbox-noir">
-                  <input type="checkbox" id="checkbox-noir" name="nz-sample-request" value="nedzink noir">
+                  <input type="checkbox" id="checkbox-noir" name="nedzink-sample-request" value="nedzink noir">
                   NedZink Noir
                 </label>
                 <label for="checkbox-nuance-red">
-                  <input type="checkbox" id="checkbox-nuance-red" name="nz-sample-request" value="nedzink nuance red">
+                  <input type="checkbox" id="checkbox-nuance-red" name="nedzink-sample-request" value="nedzink nuance red">
                   NedZink Nuance Red
                 </label>
+                <label for="checkbox-nuance-blue">
+                  <input type="checkbox" id="checkbox-nuance-blue" name="nedzink-sample-request" value="nedzink nuance blue">
+                  NedZink Nuance Blue
+                </label>
+                <label for="checkbox-nuance-green">
+                  <input type="checkbox" id="checkbox-nuance-green" name="nedzink-sample-request" value="nedzink nuance green">
+                  NedZink Nuance Green
+                </label>
 
-              <button class="submit more-button" type="submit">Send</button>
+              <button class="submit more-button" type="submit">Submit</button>
             </form>
 
 
 
 
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Name</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" required>
-      </div>
-    
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Phone</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Number">
-      </div>
-    
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-      </div>
-    
-      <div class="mb-3">
-        <label for="formFileMultiple" class="form-label">Upload Drawings</label>
-        <input class="form-control" type="file" id="formFileMultiple" multiple>
-      </div>
-    
+     
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Message</label>
         <textarea class="form-control" id="message-input" rows="3" placeholder="Message"></textarea>
       </div>
 
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-        <textarea class="form-control" id="message-input" rows="3" placeholder="Message"></textarea>
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-         NedZink Naturel
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
-          NedZink Neo
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-        <label class="form-check-label" for="flexCheckChecked">
-          NedZink Noir
-        </label>
-      </div>
       
-      <button class="submit more-button" type="submit">Send</button>
-     </div>
-    </div>
+  
   
      <!-- Order Samples Form -->
     <div class="col-md-6">

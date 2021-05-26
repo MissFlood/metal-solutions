@@ -675,3 +675,6 @@ font-size: 13px;
 /* #endregion */
 
 
+#nedzink-form input, #edzink-form textarea{
+  color: black;
+}
